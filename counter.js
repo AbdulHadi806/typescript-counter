@@ -4,10 +4,9 @@ var button = document.getElementById("AddButton");
 var inputData = document.getElementById("input-data");
 var integer = 0;
 var addNumber = function (num1, num2) {
-    integer = num1 + num1;
+    return integer = num1 + num2;
 };
 button.addEventListener("click", function (e) {
     e.preventDefault();
-    addNumber(+input_1.value, +input_2.value);
-    inputData.innerHTML = integer;
+    inputData.innerHTML = String(addNumber(+input_1.value, +input_2.value));
 });
